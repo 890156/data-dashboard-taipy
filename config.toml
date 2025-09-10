@@ -1,0 +1,21 @@
+[TAIPY]
+
+[DATA_NODE.filtered_df]
+
+[DATA_NODE.gender_filter]
+
+[DATA_NODE.avg_age]
+
+[TASK.compute_avg_age]
+function = "__main__.compute_avg_age:function"
+inputs = [ "filtered_df:SECTION", "gender_filter:SECTION",]
+outputs = [ "avg_age:SECTION",]
+skippable = "False:bool"
+
+[SCENARIO.cardiac_scenario]
+tasks = [ "compute_avg_age:SECTION",]
+additional_data_nodes = []
+
+[SCENARIO.cardiac_scenario.comparators]
+
+[SCENARIO.cardiac_scenario.sequences]
