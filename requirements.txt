@@ -1,0 +1,5 @@
+taipy
+pandas
+gspread
+oauth2client
+plotly
